@@ -19,7 +19,7 @@ $ npm install -g @pantsme/keepcli
 $ keepcli COMMAND
 running command...
 $ keepcli (-v|--version|version)
-@pantsme/keepcli/0.0.0 linux-x64 node-v12.18.4
+@pantsme/keepcli/0.0.1 linux-x64 node-v12.18.4
 $ keepcli --help [COMMAND]
 USAGE
   $ keepcli COMMAND
@@ -28,47 +28,31 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`keepcli bond ADDRESS`](#keepcli-bond-address)
-* [`keepcli hello [ADDRESS]`](#keepcli-hello-address)
+* [`keepcli bond [ADDRESS]`](#keepcli-bond-address)
 * [`keepcli help [COMMAND]`](#keepcli-help-command)
 
-## `keepcli bond ADDRESS`
+## `keepcli bond [ADDRESS]`
 
 Check free bond of ECDSA Signing node
 
 ```
 USAGE
-  $ keepcli bond ADDRESS
+  $ keepcli bond [ADDRESS]
 
 ARGUMENTS
   ADDRESS  operator address to check
+
+OPTIONS
+  -a, --addr=addr  operator address to check
+  -f, --force
+  -h, --help       show CLI help
 
 EXAMPLE
   $ keepcli bond 0x0000000000000000000000000000000000
   eth available for bonding: 20.2345
 ```
 
-_See code: [src/commands/bond.ts](https://github.com/afmsavage/keepcli/blob/v0.0.0/src/commands/bond.ts)_
-
-## `keepcli hello [ADDRESS]`
-
-describe the command here
-
-```
-USAGE
-  $ keepcli hello [ADDRESS]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ keepcli hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/afmsavage/keepcli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/bond.ts](https://github.com/afmsavage/keepcli/blob/v0.0.1/src/commands/bond.ts)_
 
 ## `keepcli help [COMMAND]`
 

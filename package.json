@@ -1,7 +1,7 @@
 {
   "name": "@pantsme/keepcli",
   "description": "CLI Tool used to request information about running nodes on the Keep Network",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Antonio Savage @afmsavage",
   "bin": {
     "keepcli": "./bin/run"
@@ -53,7 +53,8 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "publish": "npm version patch --force && npm publish --access=public"
   },
   "types": "lib/index.d.ts"
 }
