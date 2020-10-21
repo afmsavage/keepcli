@@ -3,7 +3,7 @@ import {Command, flags} from '@oclif/command'
 
 const ethers = require('ethers')
 const KeepBonding = require('@keep-network/keep-ecdsa/artifacts/KeepBonding.json')
-async function getBond(address) {
+async function getBond(address: any) {
   try {
     const ip = new ethers.providers.InfuraProvider('homestead', '8461f7340a2a42d2b670eba6bcbd5e9f')
     let addr
