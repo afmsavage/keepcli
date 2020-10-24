@@ -3,6 +3,8 @@ import {Command, flags} from '@oclif/command'
 
 const ethers = require('ethers')
 const KeepBonding = require('@keep-network/keep-ecdsa/artifacts/KeepBonding.json')
+import * as path from 'path'
+
 async function getBond(address: any) {
   try {
     const ip = new ethers.providers.InfuraProvider('homestead', '8461f7340a2a42d2b670eba6bcbd5e9f')
@@ -46,7 +48,8 @@ eth available for bonding: 20.2345
 
   async run() {
     const {args, flags} = this.parse(Bond)
-
+    // INFO: need to figure out this part still - loading the config
+    const config = require(path.join(this.config.configDir, 'config.json'))
     const addr = flags.addr ?? 'world'
     this.log(await getBond(addr)
     )

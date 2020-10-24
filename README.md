@@ -29,7 +29,11 @@ USAGE
 # Commands
 <!-- commands -->
 * [`keepcli bond [ADDRESS]`](#keepcli-bond-address)
+* [`keepcli config [FILE]`](#keepcli-config-file)
 * [`keepcli help [COMMAND]`](#keepcli-help-command)
+* [`keepcli keeps [FILE]`](#keepcli-keeps-file)
+* [`keepcli liquidations [FILE]`](#keepcli-liquidations-file)
+* [`keepcli tdts [FILE]`](#keepcli-tdts-file)
 
 ## `keepcli bond [ADDRESS]`
 
@@ -54,6 +58,22 @@ EXAMPLE
 
 _See code: [src/commands/bond.ts](https://github.com/afmsavage/keepcli/blob/v0.0.1/src/commands/bond.ts)_
 
+## `keepcli config [FILE]`
+
+configure keepcli with your node's operator address
+
+```
+USAGE
+  $ keepcli config [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/config.ts](https://github.com/afmsavage/keepcli/blob/v0.0.1/src/commands/config.ts)_
+
 ## `keepcli help [COMMAND]`
 
 display help for keepcli
@@ -70,4 +90,52 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+
+## `keepcli keeps [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ keepcli keeps [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/keeps.ts](https://github.com/afmsavage/keepcli/blob/v0.0.1/src/commands/keeps.ts)_
+
+## `keepcli liquidations [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ keepcli liquidations [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/liquidations.ts](https://github.com/afmsavage/keepcli/blob/v0.0.1/src/commands/liquidations.ts)_
+
+## `keepcli tdts [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ keepcli tdts [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/tdts.ts](https://github.com/afmsavage/keepcli/blob/v0.0.1/src/commands/tdts.ts)_
 <!-- commandsstop -->
