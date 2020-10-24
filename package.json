@@ -12,10 +12,7 @@
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.0",
-    "@types/fs-extra": "^9.0.2",
-    "cli-ux": "^5.5.0",
     "ethers": "^5.0.18",
-    "mkdirp": "^1.0.4",
     "tslib": "^1.14.1"
   },
   "devDependencies": {
